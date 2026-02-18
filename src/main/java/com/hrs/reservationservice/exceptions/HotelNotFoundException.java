@@ -1,16 +1,17 @@
 package com.hrs.reservationservice.exceptions;
 
+
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.ResponseStatus;
 
 @ResponseStatus(value = HttpStatus.NOT_FOUND)
-public class ReservationNotFoundException extends  RuntimeException
+public class HotelNotFoundException extends  RuntimeException
 {
-    public ReservationNotFoundException()
+    public HotelNotFoundException()
     {
 
     }
-    public ReservationNotFoundException(String message)
+    public HotelNotFoundException(String message)
     {
         super(message);
     }
