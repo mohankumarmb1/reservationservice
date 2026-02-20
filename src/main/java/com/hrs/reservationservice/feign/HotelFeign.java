@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 
-@FeignClient(value="hotel-management-service",url ="localhost:8081/hotel")
+@FeignClient(value="hotel-management-service",url ="localhost:8084/api/v1/hotel")
 public interface HotelFeign
 {
     @GetMapping("/{id}")
